@@ -7,64 +7,62 @@ export default function Yangiliklar() {
     {
       id: 1,
       title:
-        "Yuqori daromadli mahsulotlarni yetishtirish bo'yicha na'munaviy loyihalar amalga oshiriladi",
+        "Buxoro davlat universitetida yoshlar uchun yaratilgan sharoitlar o‘rganildi",
       date: "19.02.2025",
       time: "15:00",
-      image: "/images/media/IMG_8125.JPG",
-      description:
-        "Oliy Majlis Qonunchilik palatasi Agrar va suv xo'jaligi masalalari qo'mitasining kengaytirilgan yig'ilishi bo'lib o'tdi. Unda tegishli vazirlik va idoralar rahbarlarining \"Mamlakatimizda parrandachilikni rivojlantirish, yaylovlardan samarali foydalanish hamda tomorqa va ijara berilgan ekin yerlarida daromadli mahsulot yetishtirish bo'yicha amalga oshirilayotgan ishlar to'g'risida\"gi hisoboti eshitildi.",
+      image: "/images/media/IMG_3950.JPG",
+      description: `Oliy Majlis Qonunchilik palatasi huzuridagi Yoshlar parlamenti raisi Otabek Sobitov Buxoro davlat universitetiga tashrif buyurdi. Tashrif davomida u universitet faoliyati, ta’lim sifati, ilmiy izlanishlar va talabalar uchun yaratilgan imkoniyatlar bilan yaqindan tanishdi.`,
       category: "Qonunchilik palatasi",
     },
     {
       id: 2,
       title:
-        "Qonunchilik palatasi deputatlari tomonidan yangi qonun loyihasi muhokama qilindi",
+        "Yoshlar parlamenti Raisi talabalar bilan ochiq muloqotda ishtirok etdi",
       date: "18.02.2025",
       time: "11:00",
-      image: "/placeholder.svg?height=200&width=400&text=News+2",
-      description:
-        "Bugun Qonunchilik palatasi majlisida deputatlar tomonidan yangi qonun loyihasi atroflicha muhokama qilindi. Muhokamada barcha fraksiyalar vakillari o'z fikrlarini bildirdilar.",
+      image: "/images/media/IMG_8125.JPG",
+      description: `Buxoro davlat universitetida faol va tashabbuskor talabalar bilan ochiq muloqot tashkil etildi.
+ 
+Uchrashuv davomida yoshlarning ilm-fanga bo‘lgan qiziqishi, jamiyatdagi o‘rni va ularning tashabbuslarini qo‘llab-quvvatlash masalalari muhokama qilindi. Talabalar o‘z fikr-mulohazalari, g‘oyalari va takliflari bilan ishtirok etib, savollariga atroflicha javob oldilar.`,
       category: "Qonunchilik palatasi",
     },
     {
       id: 3,
-      title: "Yoshlar parlamenti a'zolari bilan davra suhbati o'tkazildi",
+      title:
+        "Yoshlar parlamenti Raisi Kogon tumanidagi 1-sonli jazoni ijro etish muassasida mahkumlar bilan suhbatlashildi",
       date: "13.02.2025",
       time: "11:00",
-      image: "/placeholder.svg?height=200&width=400&text=News+3",
-      description:
-        "Yoshlar parlamenti a'zolari bilan davra suhbati tashkil etildi. Unda yoshlarning qonun ijodkorligi jarayonidagi ishtiroki masalalari muhokama qilindi.",
+      image: "/images/media/IMG_3998.JPG",
+      description: `Yoshlar parlamenti Raisi Kogon tumanidagi 1-sonli jazoni ijro etish muassasi faoliyati bilan yaqindan tanishdi. Muassasada maxkumlarni kasb-hunar o‘rganishlari, xorijiy tillarni o‘zlashitirish, yaratilgan shart-sharoitlar bilan tanishilib, muassasa faoliyati yuzasidan takliflar ilgari surildi.`,
       category: "Yoshlar parlamenti",
     },
     {
       id: 4,
-      title: "Xalqaro parlament delegatsiyasi bilan uchrashuv",
+      title:
+        "Xorazm — dunyo taraqqiyotining beshigi, dunyo sivilizatsiyasi va madaniyatiga bebaho hissa qo‘shgan Sharq gavhari hisoblanadi. Uning havas qilsa arziydigan bebaho boyligi – tarixiy obidalari bor. “Ichan qal’a” majmuasining umumbashariyat xazinasi sifatida YUNЕSKO ro‘yxatiga kiritilgani fikrimiz isbotidir.",
       date: "11.02.2025",
       time: "10:00",
-      image: "/placeholder.svg?height=200&width=400&text=News+4",
-      description:
-        "Qonunchilik palatasi rahbariyati xalqaro parlament delegatsiyasi bilan uchrashuv o'tkazdi. Uchrashuv davomida ikki tomonlama hamkorlik masalalari muhokama qilindi.",
+      image: "/images/news/photo_2025-05-06_00-47-28.jpg",
+      description: `Har oyning oxirgi haftasida xalq bilan muloqot qilish, odamlarni o‘ylantirayotgan masalalarga yechim topish maqsadida hududlarda bo‘lib, saylovchilar bilan muloqotlar o‘tkazamiz. Ochig‘i, har gal borganimizda biror o‘zgarish yoki yangilanishning guvohi bo‘lamiz. Chunki hozir bu yerda Yangi O‘zbekiston nafasi har bir mahalla, har bir xonadonga kirib boryapti.`,
       category: "Xalqaro aloqalar",
     },
     {
       id: 5,
-      title: "Yoshlar parlamenti qo'mitalari yig'ilishlari bo'lib o'tdi",
+      title:
+        "Prezidentimiz Shavkat Mirziyoyevning hududlar rivoji va aholi hayoti bilan yaqindan tanishish, yangi istiqbolli rejalarni belgilash maqsadida 1-2-may kunlari Xorazm viloyatiga tashrifi tom ma’noda, tarixiy voqea bo‘ldi.",
       date: "10.02.2025",
       time: "14:00",
-      image: "/placeholder.svg?height=200&width=400&text=News+5",
-      description:
-        "Yoshlar parlamenti qo'mitalari yig'ilishlari bo'lib o'tdi. Yig'ilishlarda qo'mitalar faoliyati, qonun loyihalari muhokama qilindi.",
+      image: "/images/news/photo_2025-05-06_00-47-23.jpg",
+      description: `Davlatimiz rahbarining "Xorazm – shonli tariximiz bilan yangi islohotlarimiz tutashgan chorraha" deya ta’kidlagan so‘zlari bugungi kundagi o‘zgarishlarning voha ahli hayotida naqadar muhim o‘rin tutganini yaqqol ko‘rsatdi.`,
       category: "Yoshlar parlamenti",
     },
     {
       id: 6,
-      title:
-        "Yoshlar parlamenti a'zolari xorijiy mamlakatlarga tashrif buyurdilar",
+      title: "Turistik imkoniyatlar — voha ravnaqida muhim bosqich",
       date: "08.02.2025",
       time: "09:00",
-      image: "/placeholder.svg?height=200&width=400&text=News+6",
-      description:
-        "Yoshlar parlamenti a'zolari xorijiy mamlakatlarga tashrif buyurdilar. Tashriflar davomida xorijiy mamlakatlar parlamenti, yoshlar tashkilotlari bilan uchrashuvlar o'tkazildi, tajriba almashildi.",
+      image: "/images/news/photo_2025-05-06_00-47-13.jpg",
+      description: `Davlatimiz rahbari Xorazm viloyatiga tashrifini bugungi kunda soatiga atigi 400 nafar yo‘lovchiga xizmat ko‘rsata olishi mumkin bo‘lgan Urganch xalqaro aeroportini Koreya Respublikasining Incheon International Airport Corporation kompaniyasi bilan birgalikda modernizatsiya qilish va boshqarish borasidagi loyihalar bilan tanishishdan boshladi. Bu bejiz emas.`,
       category: "Xalqaro aloqalar",
     },
   ];

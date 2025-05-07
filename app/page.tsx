@@ -10,7 +10,7 @@ export default function Home() {
         "Buxoro davlat universitetida yoshlar uchun yaratilgan sharoitlar o‘rganildi",
       date: "19.02.2025",
       time: "15:00",
-      image: "/images/news/photo_2025-05-06_00-47-28.jpg",
+      image: "/images/media/IMG_3950.JPG",
       description: `Oliy Majlis Qonunchilik palatasi huzuridagi Yoshlar parlamenti raisi Otabek Sobitov Buxoro davlat universitetiga tashrif buyurdi.
 
 Tashrif davomida u universitet faoliyati, ta’lim sifati, ilmiy izlanishlar va talabalar uchun yaratilgan imkoniyatlar bilan yaqindan tanishdi.`,
@@ -22,7 +22,7 @@ Tashrif davomida u universitet faoliyati, ta’lim sifati, ilmiy izlanishlar va 
         "Yoshlar parlamenti Raisi talabalar bilan ochiq muloqotda ishtirok etdi",
       date: "18.02.2025",
       time: "11:00",
-      image: "/images/media/IMG_8089.JPG",
+      image: "/images/media/IMG_8125.JPG",
       description: `Buxoro davlat universitetida faol va tashabbuskor talabalar bilan ochiq muloqot tashkil etildi.
  
 Uchrashuv davomida yoshlarning ilm-fanga bo‘lgan qiziqishi, jamiyatdagi o‘rni va ularning tashabbuslarini qo‘llab-quvvatlash masalalari muhokama qilindi. Talabalar o‘z fikr-mulohazalari, g‘oyalari va takliflari bilan ishtirok etib, savollariga atroflicha javob oldilar.
@@ -38,7 +38,7 @@ Bunday muloqotlar yoshlarning faolligini oshirish, ularni yangi g‘oyalar sari 
         "Yoshlar parlamenti Raisi Kogon tumanidagi 1-sonli jazoni ijro etish muassasida mahkumlar bilan suhbatlashildi",
       date: "13.02.2025",
       time: "11:00",
-      image: "/images/media/IMG_8069.JPG",
+      image: "/images/media/IMG_3998.JPG",
       description: `Yoshlar parlamenti Raisi Kogon tumanidagi 1-sonli jazoni ijro etish muassasi faoliyati bilan yaqindan tanishdi. Muassasada maxkumlarni kasb-hunar o‘rganishlari, xorijiy tillarni o‘zlashitirish, yaratilgan shart-sharoitlar bilan tanishilib, muassasa faoliyati yuzasidan takliflar ilgari surildi.
 
 Shuningdek, Yoshlar parlamenti raisi Otabekxo‘ja Sobitov muassasadagi maxkumlar bilan suxbatlashdi.
@@ -48,12 +48,13 @@ Suxbat doirasida “Fuqarolarning davlat pensiya taʼminoti toʻgʻrisida”gi Q
     },
     {
       id: 4,
-      title: "Xalqaro parlament delegatsiyasi bilan uchrashuv",
+      title:
+        "Xorazm — dunyo taraqqiyotining beshigi, dunyo sivilizatsiyasi va madaniyatiga bebaho hissa qo‘shgan Sharq gavhari hisoblanadi. Uning havas qilsa arziydigan bebaho boyligi – tarixiy obidalari bor. “Ichan qal’a” majmuasining umumbashariyat xazinasi sifatida YUNЕSKO ro‘yxatiga kiritilgani fikrimiz isbotidir.",
       date: "11.02.2025",
       time: "10:00",
-      image: "/images/media/IMG_3999.JPG",
+      image: "/images/news/photo_2025-05-06_00-47-28.jpg",
       description:
-        "Qonunchilik palatasi rahbariyati xalqaro parlament delegatsiyasi bilan uchrashuv o'tkazdi. Uchrashuv davomida ikki tomonlama hamkorlik masalalari muhokama qilindi.",
+        "Har oyning oxirgi haftasida xalq bilan muloqot qilish, odamlarni o‘ylantirayotgan masalalarga yechim topish maqsadida hududlarda bo‘lib, saylovchilar bilan muloqotlar o‘tkazamiz. Ochig‘i, har gal borganimizda biror o‘zgarish yoki yangilanishning guvohi bo‘lamiz. Chunki hozir bu yerda Yangi O‘zbekiston nafasi har bir mahalla, har bir xonadonga kirib boryapti.",
       location: "Oliy Majlis Qonunchilik palatasi",
     },
   ];
@@ -116,13 +117,13 @@ Suxbat doirasida “Fuqarolarning davlat pensiya taʼminoti toʻgʻrisida”gi Q
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-8">
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 sm:p-6 md:p-8">
             <div className="container mx-auto">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+              <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4">
                 Yuqori daromadli mahsulotlarni yetishtirish bo'yicha na'munaviy
                 loyihalar amalga oshiriladi
               </h1>
-              <p className="text-white text-lg md:text-xl max-w-3xl mb-6">
+              <p className="text-sm sm:text-base md:text-lg text-white mb-4 sm:mb-6 max-w-full md:max-w-3xl">
                 Oliy Majlis Qonunchilik palatasi Agrar va suv xo'jaligi
                 masalalari qo'mitasining kengaytirilgan yig'ilishi bo'lib o'tdi.
                 Unda tegishli vazirlik va idoralar rahbarlarining
@@ -133,7 +134,7 @@ Suxbat doirasida “Fuqarolarning davlat pensiya taʼminoti toʻgʻrisida”gi Q
               </p>
               <Link
                 href="/yangiliklar/1"
-                className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition"
+                className="inline-block bg-blue-600 text-white text-sm sm:text-base px-5 sm:px-6 py-2 sm:py-3 rounded-md font-medium hover:bg-blue-700 transition"
               >
                 Batafsil
               </Link>
@@ -505,65 +506,73 @@ Suxbat doirasida “Fuqarolarning davlat pensiya taʼminoti toʻgʻrisida”gi Q
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-8">
             {" "}
             <div className="bg-gray-100 p-4 rounded-lg text-center">
-              <div className="mb-3">
-                <Image
-                  src="https://marketing.uz/brend-goda-2022/uploads/works/covers/ba7d81c771f0bd1eae92be86c665f74f.jpg"
-                  alt="Institution Icon"
-                  width={60}
-                  height={60}
-                  className="mx-auto"
-                />
-              </div>
-              <h3 className="text-sm font-medium mb-1">
-                O'zbekiston Respublikasi Oliy Majlisi Qonunchilik palatasi
-                huzuridagi Parlament tadqiqotlari instituti
-              </h3>
+              <a href="https://my.gov.uz/en">
+                <div className="mb-3">
+                  <Image
+                    src="https://marketing.uz/brend-goda-2022/uploads/works/covers/ba7d81c771f0bd1eae92be86c665f74f.jpg"
+                    alt="Institution Icon"
+                    width={60}
+                    height={60}
+                    className="mx-auto"
+                  />
+                </div>
+                <h3 className="text-sm font-medium mb-1">
+                  O'zbekiston Respublikasi Oliy Majlisi Qonunchilik palatasi
+                  huzuridagi Parlament tadqiqotlari instituti
+                </h3>
+              </a>
             </div>
             <div className="bg-gray-100 p-4 rounded-lg text-center">
-              <div className="mb-3">
-                <Image
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Emblem_of_Uzbekistan.svg/1200px-Emblem_of_Uzbekistan.svg.png"
-                  alt="Institution Icon"
-                  width={60}
-                  height={60}
-                  className="mx-auto"
-                />
-              </div>
-              <h3 className="text-sm font-medium mb-1">
-                O'zbekiston Respublikasi Oliy Majlisi huzuridagi Nodavlat
-                notijorat tashkilotlarini va fuqarolik jamiyatining boshqa
-                institutlarini qo'llab-quvvatlash jamoat fondi
-              </h3>
+              <a href="https://president.uz/uz">
+                <div className="mb-3">
+                  <Image
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Emblem_of_Uzbekistan.svg/1200px-Emblem_of_Uzbekistan.svg.png"
+                    alt="Institution Icon"
+                    width={60}
+                    height={60}
+                    className="mx-auto"
+                  />
+                </div>
+                <h3 className="text-sm font-medium mb-1">
+                  O'zbekiston Respublikasi Oliy Majlisi huzuridagi Nodavlat
+                  notijorat tashkilotlarini va fuqarolik jamiyatining boshqa
+                  institutlarini qo'llab-quvvatlash jamoat fondi
+                </h3>
+              </a>
             </div>
             <div className="bg-gray-100 p-4 rounded-lg text-center">
-              <div className="mb-3">
-                <Image
-                  src="https://upload.wikimedia.org/wikipedia/uz/3/34/Ombudsman_logo.jpg"
-                  alt="Institution Icon"
-                  width={60}
-                  height={60}
-                  className="mx-auto"
-                />
-              </div>
-              <h3 className="text-sm font-medium mb-1">
-                O'zbekiston Respublikasi Oliy Majlisining Inson huquqlari
-                bo'yicha vakili (Ombudsman)
-              </h3>
+              <a href="https://ombudsman.uz/uz">
+                <div className="mb-3">
+                  <Image
+                    src="https://upload.wikimedia.org/wikipedia/uz/3/34/Ombudsman_logo.jpg"
+                    alt="Institution Icon"
+                    width={60}
+                    height={60}
+                    className="mx-auto"
+                  />
+                </div>
+                <h3 className="text-sm font-medium mb-1">
+                  O'zbekiston Respublikasi Oliy Majlisining Inson huquqlari
+                  bo'yicha vakili (Ombudsman)
+                </h3>
+              </a>
             </div>
             <div className="bg-gray-100 p-4 rounded-lg text-center">
-              <div className="mb-3">
-                <Image
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIO2fwMPLknKvR458u1lrP-LoxsmbzApaLOQ&s"
-                  alt="Institution Icon"
-                  width={60}
-                  height={60}
-                  className="mx-auto"
-                />
-              </div>
-              <h3 className="text-sm font-medium mb-1">
-                O'zbekiston Respublikasi Oliy Majlisining Bola huquqlari
-                bo'yicha vakili (Ombudsman)
-              </h3>
+              <a href="https://www.ombudsman.uz/oz/managements/bolalar-ombudsmani-2">
+                <div className="mb-3">
+                  <Image
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIO2fwMPLknKvR458u1lrP-LoxsmbzApaLOQ&s"
+                    alt="Institution Icon"
+                    width={60}
+                    height={60}
+                    className="mx-auto"
+                  />
+                </div>
+                <h3 className="text-sm font-medium mb-1">
+                  O'zbekiston Respublikasi Oliy Majlisining Bola huquqlari
+                  bo'yicha vakili (Ombudsman)
+                </h3>
+              </a>
             </div>
           </div>
         </div>

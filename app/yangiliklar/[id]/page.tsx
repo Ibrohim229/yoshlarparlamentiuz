@@ -13,28 +13,16 @@ export default function NewsDetail({ params }: PageProps) {
   const news = [
     {
       id: "1",
-      title: "Yosh avlod manfaatlari muhofazasi va insonparvarlik tamoyili",
+      title:
+        "Buxoro davlat universitetida yoshlar uchun yaratilgan sharoitlar o‘rganildi",
       date: "19.02.2025",
       time: "15:00",
-      image: "/images/media/IMG_8125.JPG",
+      image: "/images/media/IMG_3950.JPG",
       content: `
-        <p>Oliy Majlis Qonunchilik palatasining navbatdagi majlisi bo'lib o'tdi. Unda Bola huquqlari bo'yicha vakil (Bolalar ombudsmani)ning 2024-yildagi faoliyati to'g'risidagi ma'ruzasi, shuningdek, davlat organlari rahbarlarining muhofaza qilish sohasini rivojlantirish, homiylik faoliyatini amalga oshirish tartibi to'g'risidagi qonun loyihalarining ikkinchi va uchunchi o'qishlarida ko'rib chiqildi.</p>
+        <p>Oliy Majlis Qonunchilik palatasi huzuridagi Yoshlar parlamenti raisi Otabek Sobitov Buxoro davlat universitetiga tashrif buyurdi.</p>
         
-        <p>Muhokamada siyosiy e'tibor ularning dolzarbligi, zarurligi va ahamiyati, yangicha, yanada takomillashtirilgan qonunlar qabul qilindi.</p>
+        <p>Tashrif davomida u universitet faoliyati, ta’lim sifati, ilmiy izlanishlar va talabalar uchun yaratilgan imkoniyatlar bilan yaqindan tanishdi. </p>
         
-        <h3>Bolalar ombudsmani ma'ruzasi ko'rib chiqildi</h3>
-        
-        <p>Davlat Bola huquqlari bo'yicha vakil (Bolalar ombudsmani)ning 2024-yildagi bola huquqlari to'g'risidagi qonunchilikka davlat organlari, fuqarolarning o'zini o'zi boshqarish organlari va nodavlat notijorat tashkilotlari tomonidan rioya etilishi holati haqidagi ma'ruzasi ko'rib chiqildi.</p>
-        
-        <p>Ta'kidlanishicha, O'zbekiston Respublikasi Oliy Majlisining Bola huquqlari bo'yicha vakili (Bolalar ombudsmani) to'g'risidagi Qonun bilan Bolalar ombudsmani faoliyatining institutsional asoslari takomillashtirildi. Unga ko'ra Oliy Majlis palatalariga bola huquqlari to'g'risidagi qonunchilikka davlat organlari va huquqni muhofaza qiluvchi organlarining rioya etishi holati haqidagi hisobotlarni eshitib borish, davlat organlarining bola huquqlarini oid xalqaro standartlar va milliy qonunchilikka rioya etish holati bo'yicha ma'lumotlar aks etgan.</p>
-        
-        <p>Maqbul m'ruzasi Bolalar ombudsmanining Oliy Majlis palatalariga taqdim etilgan birinchi ma'ruzasi bo'lib, unda mamlakatimizda bola manfaatlarini ta'minlash yuzasidan amalga oshirilgan islohotlar, shuningdek, "Bolalar ombudsmani to'g'risida"gi Qonun va boshqa qonunchilik hujjatlarining amalga oshirilishi, davlat organlari o'rtasidan bola huquqlariga oid xalqaro standartlar va milliy qonunchilikka rioya etish holati bo'yicha ma'lumotlar aks etgan.</p>
-        
-        <h3>O'zbekistonda bola huquqlari to'g'risidagi qonunchilikka rioya etilishi holati Bolalar ombudsmanining parlament nazorati faoliyatidagi asosiy yo'nalishlardan biri hisoblanadi.</h3>
-        
-        <p>Hisobot yilida Bolalar ombudsmani nomiga O'zbekiston Respublikasi fuqarolari, xorijiy davlatlar fuqarolari va fuqaroligi bo'lmagan shaxslar, jamoat tashkilotlari va boshqa yuridik shaxslar tomonidan jami 1 064 ta murojaat kelib tushgan. Bu Bolalar ombudsmani institutiga yuning ishonchini yanada mustahkamlanganini bildiradi.</p>
-        
-        <p>Bola huquqlari bo'yicha vakil Sunnatov Ramazon Djabborovich 2023 yil 25 yanvar kuni Oliy Majlis Senati tomonidan 5 yil muddatga tayinlangan.</p>
       `,
       category: "Qonunchilik palatasi",
       location: "Oliy Majlis Qonunchilik palatasi",
@@ -59,7 +47,7 @@ export default function NewsDetail({ params }: PageProps) {
           title:
             "O'zbekiston bilan BMT hamkorligini bo'yicha kengashning 36-majlisi...",
           date: "16.02.2025",
-          image: "/placeholder.svg?height=100&width=150&text=Related+3",
+          image: "/images/news/photo_2025-05-06_00-47-28.jpg",
         },
         {
           id: 5,
@@ -73,18 +61,18 @@ export default function NewsDetail({ params }: PageProps) {
     {
       id: "2",
       title:
-        "Qonunchilik palatasi deputatlari tomonidan yangi qonun loyihasi muhokama qilindi",
+        "Yoshlar parlamenti Raisi talabalar bilan ochiq muloqotda ishtirok etdi",
       date: "18.02.2025",
       time: "11:00",
-      image: "/images/media/IMG_3875.JPG",
+      image: "/images/media/IMG_8125.JPG",
       content: `
-        <p>Bugun Qonunchilik palatasi majlisida deputatlar tomonidan yangi qonun loyihasi atroflicha muhokama qilindi. Muhokamada barcha fraksiyalar vakillari o'z fikrlarini bildirdilar.</p>
+        <p>Buxoro davlat universitetida faol va tashabbuskor talabalar bilan ochiq muloqot tashkil etildi.</p></br>
         
-        <p>Qonun loyihasi mamlakatimizda yoshlar siyosatini yanada takomillashtirish, yoshlarning ijtimoiy-siyosiy faolligini oshirish, ularning manfaatlarini ifoda etish maqsadida ishlab chiqilgan.</p>
+        <p>Uchrashuv davomida yoshlarning ilm-fanga bo‘lgan qiziqishi, jamiyatdagi o‘rni va ularning tashabbuslarini qo‘llab-quvvatlash masalalari muhokama qilindi. Talabalar o‘z fikr-mulohazalari, g‘oyalari va takliflari bilan ishtirok etib, savollariga atroflicha javob oldilar.</p></br>
         
-        <p>Muhokama davomida deputatlar qonun loyihasining afzalliklari va kamchiliklarini muhokama qildilar, uni takomillashtirish bo'yicha takliflar bildirdilar.</p>
+        <p>Shuningdek, yoshlarga yaratilgan imkoniyatlardan unumli foydalanish, ularni qo‘llab-quvvatlash va rag‘batlantirish mexanizmlari yuzasidan amaliy tavsiyalar berildi. Yoshlar parlamentining faoliyati, maqsad va vazifalari, shuningdek, yoshlarning siyosiy va ijtimoiy jarayonlardagi ishtiroki haqida ham atroflicha maʼlumotlar berildi.</p></br>
         
-        <p>Qonun loyihasi bo'yicha ovoz berish natijalariga ko'ra, u birinchi o'qishda qabul qilindi va ikkinchi o'qishga tayyorlanishi uchun tegishli qo'mitalarga yuborildi.</p>
+        <p>Bunday muloqotlar yoshlarning faolligini oshirish, ularni yangi g‘oyalar sari ilhomlantirish va kelajakka ishonchini mustahkamlashga xizmat qiladi.</p></br>
       `,
       category: "Qonunchilik palatasi",
       location: "Oliy Majlis Qonunchilik palatasi",
@@ -106,18 +94,18 @@ export default function NewsDetail({ params }: PageProps) {
     },
     {
       id: "3",
-      title: "Yoshlar parlamenti a'zolari bilan davra suhbati o'tkazildi",
+      title:
+        "Yoshlar parlamenti Raisi Kogon tumanidagi 1-sonli jazoni ijro etish muassasida mahkumlar bilan suhbatlashildi",
       date: "13.02.2025",
       time: "11:00",
       image: "/images/media/IMG_3876.JPG",
       content: `
-        <p>Yoshlar parlamenti a'zolari bilan davra suhbati tashkil etildi. Unda yoshlarning qonun ijodkorligi jarayonidagi ishtiroki masalalari muhokama qilindi.</p>
+        <p>Yoshlar parlamenti Raisi Kogon tumanidagi 1-sonli jazoni ijro etish muassasi faoliyati bilan yaqindan tanishdi. Muassasada maxkumlarni kasb-hunar o‘rganishlari, xorijiy tillarni o‘zlashitirish, yaratilgan shart-sharoitlar bilan tanishilib, muassasa faoliyati yuzasidan takliflar ilgari surildi.</p><br/>
         
-        <p>Davra suhbatida Yoshlar parlamenti a'zolari, Qonunchilik palatasi deputatlari, vazirlik va idoralar vakillari ishtirok etdilar.</p>
+        <p>Shuningdek, Yoshlar parlamenti raisi Otabekxo‘ja Sobitov muassasadagi maxkumlar bilan suxbatlashdi.</p><br/>
         
-        <p>Muhokama davomida yoshlarning qonun ijodkorligi jarayonidagi ishtiroki, yoshlar manfaatlarini ifoda etuvchi qonun loyihalarini ishlab chiqish va muhokama qilish jarayoni haqida fikr almashildi.</p>
+        <p>Suxbat doirasida “Fuqarolarning davlat pensiya taʼminoti toʻgʻrisida”gi Qonunining 37-moddasi ozodlikdan mahrum etishga hukm qilingan shaxslarning jazoni ijro etish muassasalarida jazoni oʻtash davrida bajaradigan har qanday ishi, agar ushbu ish bajarilgan davr uchun jazoni ijro etish muassasasi tomonidan ijtimoiy soliq toʻlangan boʻlsa umumiy mehnat stajiga qoʻshilishi belgilanganligi aytib oʻtildi.</p>
         
-        <p>Davra suhbati yakunida ishtirokchilar yoshlarning qonun ijodkorligi jarayonidagi ishtirokini yanada kengaytirish, yoshlar manfaatlarini ifoda etuvchi qonun loyihalarini ishlab chiqish va muhokama qilish jarayonini takomillashtirish bo'yicha takliflar ishlab chiqdilar.</p>
       `,
       category: "Yoshlar parlamenti",
       location: "Oliy Majlis Qonunchilik palatasi",
@@ -128,6 +116,191 @@ export default function NewsDetail({ params }: PageProps) {
           title: "Yoshlar parlamenti qo'mitalari yig'ilishlari bo'lib o'tdi",
           date: "10.02.2025",
           image: "/placeholder.svg?height=100&width=150&text=Related+1",
+        },
+      ],
+    },
+    {
+      id: "4",
+      title:
+        "Xorazm — dunyo taraqqiyotining beshigi, dunyo sivilizatsiyasi va madaniyatiga bebaho hissa qo‘shgan Sharq gavhari hisoblanadi. Uning havas qilsa arziydigan bebaho boyligi – tarixiy obidalari bor. “Ichan qal’a” majmuasining umumbashariyat xazinasi sifatida YUNЕSKO ro‘yxatiga kiritilgani fikrimiz isbotidir.",
+      date: "19.02.2025",
+      time: "15:00",
+      image: "/images/news/photo_2025-05-06_00-47-28.jpg",
+      content: `
+        <p>So‘nggi yillarda vohada ulkan yangilanish va o‘zgarishlar ro‘y berdi. Prezidentimiz boshchiligida odamlarning turmush sharoitlarini yaxshilash, tayinli ishli, doimiy daromad manbaiga ega bo‘lishi, oilasi bilan tinch-xotirjam yashashi uchun salmoqli ishlar bajarildi.</p><br/>
+        
+        <p>Har oyning oxirgi haftasida xalq bilan muloqot qilish, odamlarni o‘ylantirayotgan masalalarga yechim topish maqsadida hududlarda bo‘lib, saylovchilar bilan muloqotlar o‘tkazamiz. Ochig‘i, har gal borganimizda biror o‘zgarish yoki yangilanishning guvohi bo‘lamiz. Chunki hozir bu yerda Yangi O‘zbekiston nafasi har bir mahalla, har bir xonadonga kirib boryapti.</p><br/>
+
+        <p>Davlatimiz rahbarining shu yil 1-2-may kunlari Xorazm viloyatiga tashrifi esa katta voqelikka aylandi. Bu bejiz emas. Zero, uning doirasida hududdagi yangilanish va islohotlar, hayotga tatbiq etilayotgan yangi loyihalar bilan tanishish barobarida kelgusida qilinishi lozim bo‘lgan ishlar ham belgilab berildi.</p><br/>
+
+        <p>Urganch tumanida viloyatni iqtisodiy-ijtimoiy rivojlantirish bo‘yicha ustuvor vazifalar muhokamasi yuzasidan o‘tkazilgan yig‘ilishda Xorazm shonli tariximiz bilan yangi islohotlar tutashgan chorraha ekanligi alohida ta’kidlandi.</p><br/>
+
+        <p>Darhaqiqat, logistika zanjiridan uzoqda, tabiiy resurslari cheklangan bu diyorda o‘tgan yil “kichik va o‘rta biznes yili” bo‘ldi, deyish mumkin. Buni 2024 yilda viloyatda 7 ming yangi tadbirkor ish boshlagani, 47 ta korxona kichikdan o‘rta darajaga o‘tgani, 1 ming 700 ta korxona faoliyati tiklab, natijada bir yil ichida 290 ming aholi ish bilan ta’minlangani misolida yaqqol ko‘rish mumkin.</p><br/>
+
+        <p>Ushbu raqamlar quvonarli, albatta. Lekin oldinda yechimini kutayotgan ayrim masalalar ham bor. Xususan, vohada kambag‘allik darajasi 12 foiz atrofida, 45 ming fuqaro esa ishsiz. Shuning uchun hokimlar va o‘rinbosarlari har bir imkoniyatni loyihaga aylantirib, yangi ish o‘rinlari yaratish, sanoat, servis, turizm, qishloq xo‘jaligi, eksport salohiyatini yanada oshirish zarurligi urg‘ulandi.</p><br/>
+
+        <p>Davlatimiz rahbari bu sohalardagi imkoniyatlar va ularni ishga solish choralarini ko‘rsatib o‘tdi. Jumladan, yurtimizda turizm eksporti salohiyati 10 milliard dollar bo‘lsa, shuning 2 milliard dollari aynan Xorazmga to‘g‘ri keladi. Afsuski, bu to‘liq ishga solinmayapti. Agar zarur choralar ko‘rilsa, ming-minglab yangi ish o‘rinlari yaratiladi, odamlarning real daromadlari oshadi.</p><br/>
+        
+        <p>Bugungi kunda viloyat bo‘yicha jami 263 ta madaniy meros obidasi mavjud. Tadbirkorlar bilan hamkorlikda ular turistik maskanga aylantirilsa, qo‘shimcha daromad va ish o‘rinlari bo‘ladi. Shuningdek, chet eldan tajribali arxeologlarni jalb qilib, tarixiy joylarni aniqlash va tiklashga mablag‘ ajratiladi.</p><br/>
+
+        <p>Xorazmda 40 dan ortiq hunarmandchilik yo‘nalishlari rivojlangan bo‘lib, sayyohlar mahsulot tayyorlash jarayoniga ham qiziqadi. Turizmda ovqatlanish joylari juda muhim. Bu borada milliy taomlarimizni chet ellarda tanitayotgan restoratorlarni qo‘llab-quvvatlash zarurligi qayd etilib, xorijda o‘zbek restoranlari tashkil qilishda ro‘yxatdan o‘tish, ruxsatnoma va ish yuritish bilan bog‘liq xarajatlarning bir qismi qoplab berilishi belgilandi.</p><br/>
+        
+      `,
+      category: "Qonunchilik palatasi",
+      location: "Oliy Majlis Qonunchilik palatasi",
+      views: 1245,
+      relatedNews: [
+        {
+          id: 2,
+          title:
+            "Oliy sud jinoyat protsessida shaxsiy hayot daxlsizligi, shaxsiy va oilaviy sirga oid...",
+          date: "18.02.2025",
+          image: "/images/media/IMG_3875.JPG",
+        },
+        {
+          id: 3,
+          title:
+            "Qonun ijodkorligi jarayonida fuqarolarning ishtirokini ta'minlash...",
+          date: "17.02.2025",
+          image: "/images/media/IMG_3875.JPG",
+        },
+        {
+          id: 4,
+          title:
+            "O'zbekiston bilan BMT hamkorligini bo'yicha kengashning 36-majlisi...",
+          date: "16.02.2025",
+          image: "/images/news/photo_2025-05-06_00-47-28.jpg",
+        },
+        {
+          id: 5,
+          title:
+            "Davlat dasturi va huquqshunoslik fanining dolzarb masalalari...",
+          date: "15.02.2025",
+          image: "/placeholder.svg?height=100&width=150&text=Related+4",
+        },
+      ],
+    },
+
+    {
+      id: "5",
+      title:
+        "Prezidentimiz Shavkat Mirziyoyevning hududlar rivoji va aholi hayoti bilan yaqindan tanishish, yangi istiqbolli rejalarni belgilash maqsadida 1-2-may kunlari Xorazm viloyatiga tashrifi tom ma’noda, tarixiy voqea bo‘ldi.",
+      date: "19.02.2025",
+      time: "15:00",
+      image: "/images/news/photo_2025-05-06_00-47-23.jpg",
+      content: `
+        <p>Davlatimiz rahbarining "Xorazm – shonli tariximiz bilan yangi islohotlarimiz tutashgan chorraha" deya ta’kidlagan so‘zlari bugungi kundagi o‘zgarishlarning voha ahli hayotida naqadar muhim o‘rin tutganini yaqqol ko‘rsatdi.</p><br/>
+        
+        <p>Birgina 2024-yilda viloyatda 7 ming yangi tadbirkorning ish boshlashi, 47 korxonaning kichikdan o‘rta biznes toifasiga o‘tishi, o‘ndan ziyod tadbirkorning yillik aylanmasi 200 milliard so‘mdan oshishi –Xorazm iqtisodiyotida sezilarli jonlanish yuz berayotganidan dalolatdir.</p><br/>
+
+        <p>Yutuqlar bilan birga, viloyatda sohalarning jadal taraqqiyoti uzviy davom etishi uchun yechimini kutayotgan ayrim muammolar ham mavjud. Bu borada viloyat va tuman hokimlariga har bir imkoniyatni ishga solib, yangi loyihalarni amalga oshirish, sanoat, xizmat ko‘rsatish, turizm, qishloq xo‘jaligi va eksport salohiyatini oshirish, ijtimoiy soha va infratuzilmadagi kamchiliklarni bartaraf etish bo‘yicha aniq vazifalar qo‘yildi.</p><br/>
+
+        <p>Turizm – bu faqat sayru sayohat, mazmunli dam olishgina emas. U avvalo ellarni ellarga, dillarni dillarga bog‘laydigan, xalqimizning boy madaniyati va tarixiy merosini dunyoga namoyon qiladigan ko‘zgu hamdir. Bu borada O‘zbekiston tarixchilar jamiyatining Xorazm bo‘limi faoliyatini davlat tomonidan qo‘llab-quvvatlash, chet ellik tajribali arxeologlarni jalb qilish, Xorazm va Qoraqalpog‘iston hududidagi qadimiy qal’alarni bog‘lovchi yangi turistik marshrutlar ishlab chiqish, ular atrofida xizmat ko‘rsatish obyektlarini barpo etish bo‘yicha ilgari surilgan muhim tashabbuslar vohada sayyohlar oqimini yanada kengaytirishga xizmat qilishi aniq.</p><br/>
+
+        <p>Gastronomik turizmni rivojlantirish, milliy taomlarni xorijda targ‘ib qilish, hunarmandchilikni qo‘llab-quvvatlash, Mevaston mahallasida Hunarmandchilik markazini tashkil etish, hunarmand shogirdlarni tayyorlashga mablag‘ ajratish kabi chora-tadbirlar viloyat turizm salohiyatini yuksaltirishga qaratilgan muhim qadamlar bo‘ldi.</p><br/>
+
+        <p>Qishloq xo‘jaligida suvni tejovchi texnologiyalarni joriy etish, xususan, Avstriyaning "Bauer" kompaniyasi bilan hamkorlikda yomg‘irlatib sug‘orish tizimini keng joriy etish bo‘yicha kelishuvga erishilishi agrar sohada hosildorlikni oshirish va suv resurslaridan oqilona foydalanish imkonini beradi.</p><br/>
+
+        <p>Yo‘llar va ko‘priklarni ta’mirlash, yangi uy-joylar qurish, ichimlik suvi va kanalizatsiya tizimlarini modernizatsiya qilish, zamonaviy avtobuslar xarid qilish kabi loyihalar aholining turmush sharoitini yaxshilashga xizmat qiladi. "Buxoro — Xiva" temir yo‘lining elektrlashtirilishi esa mintaqaning transport-logistika imkoniyatlarini kengaytiradi.</p><br/>
+        
+        <p>Xorazm eli qalbini iftixorga to‘ldirgan yana bir voqelik — shu zaminning yetuk rahbar ayollaridan biri bo‘lgan Shakarjon Xo‘janiyozova xotirasi aynan Prezidentimiz tomonidan yod etilishi va uning yubileyini keng nishonlash, nomini abadiylashtirish bo‘yicha bildirgan tashabbuslari hamda Xonqa tumanidagi "Sobirjon Yusuf" fermer xo‘jaligi rahbari Oyimjon Otajanovaga "O‘zbekiston Respublikasida xizmat ko‘rsatgan qishloq xo‘jaligi xodimi" faxriy unvonining berilishi bo‘ldi.</p><br/>
+
+        <p>Umuman olganda, tashrif davomida belgilab berilgan ustuvor vazifalar Xorazmning iqtisodiy va ijtimoiy hayotida yangi ufqlarni ochib, uning mintaqadagi yetakchi hududlardan biriga aylanishiga xizmat qiladi. Biz deputatlar ushbu topshiriqlar ijrosini sifatli va yuqori saviyada ta’minlashda faol va tashabbuskor bo‘lishimiz kerak.</p><br/>
+        
+      `,
+      category: "Qonunchilik palatasi",
+      location: "Oliy Majlis Qonunchilik palatasi",
+      views: 1245,
+      relatedNews: [
+        {
+          id: 2,
+          title:
+            "Oliy sud jinoyat protsessida shaxsiy hayot daxlsizligi, shaxsiy va oilaviy sirga oid...",
+          date: "18.02.2025",
+          image: "/images/media/IMG_3875.JPG",
+        },
+        {
+          id: 3,
+          title:
+            "Qonun ijodkorligi jarayonida fuqarolarning ishtirokini ta'minlash...",
+          date: "17.02.2025",
+          image: "/images/media/IMG_3875.JPG",
+        },
+        {
+          id: 4,
+          title:
+            "O'zbekiston bilan BMT hamkorligini bo'yicha kengashning 36-majlisi...",
+          date: "16.02.2025",
+          image: "/images/news/photo_2025-05-06_00-47-28.jpg",
+        },
+        {
+          id: 5,
+          title:
+            "Davlat dasturi va huquqshunoslik fanining dolzarb masalalari...",
+          date: "15.02.2025",
+          image: "/placeholder.svg?height=100&width=150&text=Related+4",
+        },
+      ],
+    },
+
+    {
+      id: "6",
+      title: "Turistik imkoniyatlar — voha ravnaqida muhim bosqich.",
+      date: "19.02.2025",
+      time: "15:00",
+      image: "/images/news/photo_2025-05-06_00-47-13.jpg",
+      content: `
+        <p>Davlatimiz rahbari Xorazm viloyatiga tashrifini bugungi kunda soatiga atigi 400 nafar yo‘lovchiga xizmat ko‘rsata olishi mumkin bo‘lgan Urganch xalqaro aeroportini Koreya Respublikasining Incheon International Airport Corporation kompaniyasi bilan birgalikda modernizatsiya qilish va boshqarish borasidagi loyihalar bilan tanishishdan boshladi. Bu bejiz emas.</p><br/>
+        
+        <p>Koreyadagi Inchon xalqaro aeroporti sig‘imi bo‘yicha dunyoda uchinchi o‘rinda tursa, servis bo‘yicha yetakchilardan biri hisoblanadi. Xorazmga keladigan sayyohlar oqimini 5 millionga yetkazish borasidagi maqsadga erishish uchun transport infratuzilmasining, ayniqsa, aeroportning o‘rni katta.</p><br/>
+
+        <p>Ushbu loyihaning borishi bilan tanishish davomida xorijiy aviakompaniyalar bilan hamkorlikda samolyotlar olib kelish, tashuvlarni ko‘paytirish, servis bo‘yicha Koreya tajribasini o‘rganish, mutaxassislarni o‘qitish va malakasini oshirish zarurligi urg‘ulandi.</p><br/>
+
+        <p>Bugungi kunda viloyatda 260 dan ziyod madaniy meros obyekti mavjud bo‘lib, ularning tarixi bir necha asrlarga borib taqaladi. Shubhasiz, ular o‘zining noyob va go‘zal me’moriy qiyofasi bilan nafaqat yurtimiz, balki butun Markaziy Osiyoning jahon ravnaqidagi betakror o‘rnini belgilab beradigan tirik tarixdir.
+</p><br/>
+
+        <p>Havas qilsa arziydigan bebaho boyliklarimizdan biri, ochiq osmon ostidagi shahar-muzey — “Ichan qal’a” majmuasi umumbashariyat xazinasi sifatida YUNЕSKO ro‘yxatiga kiritilgani fikrimiz dalilidir. Prezidentimiz tashabbusi bilan bunday maskanlar qatori yildan yilga ko‘payib bormoqda. Davlatimiz rahbari ochib bergan “Arda Xiva” majmuasi qadim kent ichra yana bir betakror shaharni eslatadi. Mazkur maskan o‘zida tarix va bugunni uyg‘unlashtirgan me’moriy yechimi bilan noyob loyiha sanaladi.</p><br/>
+
+        <p>Shu bilan birga, viloyatning hali ishga solinmagan turistik salohiyati juda katta. Masalan, Xiva tumanidagi 2 ming 400 gektar yerni Xiva shahriga o‘tkazib, u yerda “Sahro yulduzi” turistik kompleksini bunyod etish, hududda mehmonxonalar, ko‘ngilochar markazlar, gastronomik va savdo ko‘chalari, muzeylar, ekouylar, yozgi lager, ekstremal turizm obyektlarini barpo etish rejalashtirilgan.</p><br/>
+
+        <p>Tuproqqal’ada cho‘l hududidagi 5 ming gektar yerda safari va ov turizmini rivojlantirish, Urganch shahri, Shovot, Qo‘shko‘pir, Xiva va Hazoraspdan oqib o‘tuvchi G‘azovot, Polvon, Shovot kanallari bo‘ylarida 80 ta xizmat ko‘rsatish, savdo-ko‘ngilochar obyektlarni ishga tushirish, Bog‘ot, Gurlan, Yangibozor va Urganch tumanida turizm qishloqlarini tashkil etish ko‘zlanmoqda.</p><br/>
+        
+        <p>Ajdodlarimiz qoldirgan beqiyos ilmiy-ma’naviy merosni asrab-avaylash, boyitish va dunyoga keng targ‘ib etish maqsadida Ma’mun akademiyasi binosi oldidagi 2 gektar bog‘ni “Buyuk allomalar” nomli ochiq osmon ostidagi “smart” muzeyga aylantirish va Xorazm yurtida kamol topgan o‘nlab mumtoz ajdodlarimizning ibratli hayot yo‘li, boy ijodiy merosini interaktiv usulda bir nechta xorijiy tillarda sayyohlarga taqdim etish mo‘ljallangan.</p><br/>
+
+        <p>Prezidentimiz Xorazmda turizmni rivojlantirish Qoraqalpog‘iston bilan hamohang ravishda, yagona konsepsiya asosida amalga oshirilishini, buning uchun “Xorazm — Qoraqalpog‘iston” turizm halqasi loyihasi ishlab chiqilishini ta’kidladi.</p><br/>
+        
+      `,
+      category: "Qonunchilik palatasi",
+      location: "Oliy Majlis Qonunchilik palatasi",
+      views: 1245,
+      relatedNews: [
+        {
+          id: 2,
+          title:
+            "Oliy sud jinoyat protsessida shaxsiy hayot daxlsizligi, shaxsiy va oilaviy sirga oid...",
+          date: "18.02.2025",
+          image: "/images/media/IMG_3875.JPG",
+        },
+        {
+          id: 3,
+          title:
+            "Qonun ijodkorligi jarayonida fuqarolarning ishtirokini ta'minlash...",
+          date: "17.02.2025",
+          image: "/images/media/IMG_3875.JPG",
+        },
+        {
+          id: 4,
+          title:
+            "O'zbekiston bilan BMT hamkorligini bo'yicha kengashning 36-majlisi...",
+          date: "16.02.2025",
+          image: "/images/news/photo_2025-05-06_00-47-28.jpg",
+        },
+        {
+          id: 5,
+          title:
+            "Davlat dasturi va huquqshunoslik fanining dolzarb masalalari...",
+          date: "15.02.2025",
+          image: "/placeholder.svg?height=100&width=150&text=Related+4",
         },
       ],
     },
