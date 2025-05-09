@@ -3,15 +3,13 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Search, Menu, X } from "lucide-react";
+import { Search } from "lucide-react";
 import ParliamentLogo from "./parliament-logo";
 
 const Header = () => {
   const pathname = usePathname();
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -21,16 +19,6 @@ const Header = () => {
       ) {
         setActiveDropdown(null);
       }
-
-      if (
-        mobileMenuRef.current &&
-        !mobileMenuRef.current.contains(event.target as Node) &&
-        !(event.target as Element).closest(
-          'button[aria-label="Toggle mobile menu"]'
-        )
-      ) {
-        setMobileMenuOpen(false);
-      }
     };
 
     document.addEventListener("mousedown", handleClickOutside);
@@ -39,17 +27,8 @@ const Header = () => {
     };
   }, []);
 
-  // Close mobile menu when changing routes
-  useEffect(() => {
-    setMobileMenuOpen(false);
-  }, [pathname]);
-
   const toggleDropdown = (dropdown: string) => {
     setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
-  };
-
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
   };
 
   const dropdownMenus = {
@@ -105,7 +84,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full max-w-[100vw] overflow-hidden">
+    <header className="w-full">
       <div className="bg-red-600 text-white py-1 px-4">
         <div className="container mx-auto">
           <p className="text-sm">SAYT SINOV TARIQASIDA ISHGA TUSHIRILGAN</p>
@@ -117,18 +96,14 @@ const Header = () => {
           <Link href="/" className="flex items-center">
             <ParliamentLogo className="h-16 w-auto mt-0" />
             <div className="ml-2">
-              <div className="text-sm font-medium pt-8 whitespace-nowrap">
+              <div className="text-sm font-medium pt-8">
                 O'ZBEKISTON RESPUBLIKASI
               </div>
-              <div className="text-sm font-medium whitespace-nowrap">
+              <div className="text-sm font-medium">
                 OLIY MAJLISI QONUNCHILIK
               </div>
-              <div className="text-sm font-medium whitespace-nowrap">
-                PALATASI HUZURIDAGI
-              </div>
-              <div className="text-lg font-bold whitespace-nowrap">
-                YOSHLAR PARLAMENTI
-              </div>
+              <div className="text-sm font-medium">PALATASI HUZURIDAGI</div>
+              <div className="text-lg font-bold">YOSHLAR PARLAMENTI</div>
             </div>
           </Link>
         </div>
@@ -163,8 +138,7 @@ const Header = () => {
 
       <div className="bg-[#0047AB]" ref={dropdownRef}>
         <div className="container mx-auto px-4">
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex justify-between">
+          <nav className="flex justify-between">
             <div className="relative group">
               <button
                 className={`px-4 py-4 text-white flex items-center ${
@@ -337,201 +311,26 @@ const Header = () => {
                 </div>
               )}
             </div>
-          </nav>
 
-          {/* Mobile Navigation */}
-          <div className="flex justify-end md:hidden">
-            <button
-              className="px-4 py-4 text-white"
-              onClick={toggleMobileMenu}
-              aria-label="Toggle mobile menu"
-            >
-              {mobileMenuOpen ? (
-                <X className="w-6 h-6" />
-              ) : (
-                <Menu className="w-6 h-6" />
-              )}
+            <button className="px-4 py-4 text-white">
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
             </button>
-          </div>
+          </nav>
         </div>
       </div>
-
-      {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div
-          className="bg-[#0047AB] text-white md:hidden overflow-y-auto max-h-[80vh]"
-          ref={mobileMenuRef}
-        >
-          <div className="container mx-auto px-4 py-2">
-            <div className="space-y-2">
-              <div className="border-b border-[#003380]">
-                <button
-                  className="w-full py-3 px-2 text-left flex justify-between items-center"
-                  onClick={() => toggleDropdown("yoshlar-parlamenti")}
-                >
-                  <span>Yoshlar parlamenti</span>
-                  <svg
-                    className={`w-4 h-4 transition-transform ${
-                      activeDropdown === "yoshlar-parlamenti"
-                        ? "rotate-180"
-                        : ""
-                    }`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </button>
-                {activeDropdown === "yoshlar-parlamenti" && (
-                  <div className="pl-4 pb-2">
-                    {dropdownMenus["yoshlar-parlamenti"].map((item) => (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        className="block py-2 hover:text-gray-300"
-                      >
-                        {item.title}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              <div className="border-b border-[#003380]">
-                <Link
-                  href="/yoshlar-parlamenti-azolari"
-                  className="block py-3 px-2"
-                >
-                  Yoshlar parlamenti a'zolari
-                </Link>
-              </div>
-
-              <div className="border-b border-[#003380]">
-                <button
-                  className="w-full py-3 px-2 text-left flex justify-between items-center"
-                  onClick={() => toggleDropdown("tadbirlar")}
-                >
-                  <span>Tadbirlar</span>
-                  <svg
-                    className={`w-4 h-4 transition-transform ${
-                      activeDropdown === "tadbirlar" ? "rotate-180" : ""
-                    }`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </button>
-                {activeDropdown === "tadbirlar" && (
-                  <div className="pl-4 pb-2">
-                    {dropdownMenus["tadbirlar"].map((item) => (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        className="block py-2 hover:text-gray-300"
-                      >
-                        {item.title}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              <div className="border-b border-[#003380]">
-                <button
-                  className="w-full py-3 px-2 text-left flex justify-between items-center"
-                  onClick={() => toggleDropdown("yangiliklar")}
-                >
-                  <span>Yangiliklar</span>
-                  <svg
-                    className={`w-4 h-4 transition-transform ${
-                      activeDropdown === "yangiliklar" ? "rotate-180" : ""
-                    }`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </button>
-                {activeDropdown === "yangiliklar" && (
-                  <div className="pl-4 pb-2">
-                    {dropdownMenus["yangiliklar"].map((item) => (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        className="block py-2 hover:text-gray-300"
-                      >
-                        {item.title}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              <div className="border-b border-[#003380]">
-                <button
-                  className="w-full py-3 px-2 text-left flex justify-between items-center"
-                  onClick={() => toggleDropdown("xalqaro-munosabatlar")}
-                >
-                  <span>Xalqaro munosabatlar</span>
-                  <svg
-                    className={`w-4 h-4 transition-transform ${
-                      activeDropdown === "xalqaro-munosabatlar"
-                        ? "rotate-180"
-                        : ""
-                    }`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </button>
-                {activeDropdown === "xalqaro-munosabatlar" && (
-                  <div className="pl-4 pb-2">
-                    {dropdownMenus["xalqaro-munosabatlar"].map((item) => (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        className="block py-2 hover:text-gray-300"
-                      >
-                        {item.title}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </header>
   );
 };
