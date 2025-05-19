@@ -196,7 +196,7 @@ Suxbat doirasida “Fuqarolarning davlat pensiya taʼminoti toʻgʻrisida”gi Q
               </div>
             </div>
 
-            <div>
+            {/* <div>
               <h2 className="text-2xl font-bold mb-6">
                 Qonunchilik palatasi majlislari
               </h2>
@@ -243,7 +243,7 @@ Suxbat doirasida “Fuqarolarning davlat pensiya taʼminoti toʻgʻrisida”gi Q
                   </Link>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
