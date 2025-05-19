@@ -1,7 +1,3 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Calendar, Clock, MapPin, Users, Globe } from "lucide-react"
-
 export default function XalqaroTadbirlar() {
   const events = [
     {
@@ -63,76 +59,7 @@ export default function XalqaroTadbirlar() {
       </section>
 
       {/* Content Section */}
-      <section className="container mx-auto px-4 py-8">
-        <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
-          <h2 className="text-2xl font-bold mb-4">Xalqaro tadbirlar haqida</h2>
-          <p className="text-gray-700 mb-4">
-            O'zbekiston Respublikasi Yoshlar parlamenti xalqaro hamkorlikni rivojlantirish, xorijiy mamlakatlar yoshlar
-            tashkilotlari bilan aloqalarni mustahkamlash, xalqaro tajribani o'rganish maqsadida turli xil xalqaro
-            tadbirlarni tashkil etadi.
-          </p>
-          <div className="flex items-center justify-center my-8">
-            <div className="relative h-[300px] w-full rounded-lg overflow-hidden">
-              <Image
-                src="/placeholder.svg?height=300&width=600&text=Xalqaro+tadbirlar"
-                alt="Xalqaro tadbirlar"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-          <p className="text-gray-700">
-            Xalqaro tadbirlar Yoshlar parlamenti xalqaro aloqalar rejasiga muvofiq o'tkaziladi. Tadbirlar to'g'risidagi
-            ma'lumotlar Yoshlar parlamenti rasmiy veb-saytida e'lon qilinadi.
-          </p>
-        </div>
-
-        <h2 className="text-2xl font-bold mb-6">Rejalashtirilgan xalqaro tadbirlar</h2>
-        <div className="space-y-6">
-          {events.map((event) => (
-            <div key={event.id} className="bg-white rounded-lg shadow-sm overflow-hidden">
-              <div className="md:flex">
-                <div className="md:w-1/3">
-                  <div className="relative h-[200px] w-full">
-                    <Image src={event.image || "/placeholder.svg"} alt={event.title} fill className="object-cover" />
-                  </div>
-                </div>
-                <div className="md:w-2/3 p-6">
-                  <div className="flex items-center mb-2">
-                    <Globe className="h-5 w-5 text-blue-600 mr-2" />
-                    <h3 className="text-xl font-semibold">{event.title}</h3>
-                  </div>
-                  <div className="space-y-2 mb-4">
-                    <div className="flex items-center text-gray-600">
-                      <Calendar className="h-4 w-4 mr-2" />
-                      <span>{event.date}</span>
-                    </div>
-                    <div className="flex items-center text-gray-600">
-                      <Clock className="h-4 w-4 mr-2" />
-                      <span>{event.time}</span>
-                    </div>
-                    <div className="flex items-center text-gray-600">
-                      <MapPin className="h-4 w-4 mr-2" />
-                      <span>{event.location}</span>
-                    </div>
-                    <div className="flex items-center text-gray-600">
-                      <Users className="h-4 w-4 mr-2" />
-                      <span>{event.participants}</span>
-                    </div>
-                  </div>
-                  <p className="text-gray-700 mb-4">{event.description}</p>
-                  <Link
-                    href={`/xalqaro-munosabatlar/xalqaro-tadbirlar/${event.id}`}
-                    className="inline-block bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition"
-                  >
-                    Batafsil ma'lumot
-                  </Link>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      <section className="container mx-auto px-4 py-8">{/* Empty content as requested */}</section>
     </main>
   )
 }

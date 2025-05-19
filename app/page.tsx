@@ -504,73 +504,68 @@ Suxbat doirasida “Fuqarolarning davlat pensiya taʼminoti toʻgʻrisida”gi Q
           <h3 className="text-2xl font-bold mb-4 mt-12">Foydali havolalar</h3>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-8">
-            {" "}
             <div className="bg-gray-100 p-4 rounded-lg text-center">
-              <a href="https://my.gov.uz/en">
-                <div className="mb-3">
-                  <Image
-                    src="https://marketing.uz/brend-goda-2022/uploads/works/covers/ba7d81c771f0bd1eae92be86c665f74f.jpg"
-                    alt="Institution Icon"
-                    width={60}
-                    height={60}
-                    className="mx-auto"
-                  />
-                </div>
-                <h3 className="text-sm font-medium mb-1">
-                  O'zbekiston Respublikasi Oliy Majlisi Qonunchilik palatasi
-                  huzuridagi Parlament tadqiqotlari instituti
-                </h3>
-              </a>
-            </div>
-            <div className="bg-gray-100 p-4 rounded-lg text-center">
-              <a href="https://president.uz/uz">
+              <a href="https://president.uz/oz/pages/view/about_staff?menu_id=15">
                 <div className="mb-3">
                   <Image
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Emblem_of_Uzbekistan.svg/1200px-Emblem_of_Uzbekistan.svg.png"
-                    alt="Institution Icon"
+                    alt="President.uz"
                     width={60}
                     height={60}
                     className="mx-auto"
                   />
                 </div>
                 <h3 className="text-sm font-medium mb-1">
-                  O'zbekiston Respublikasi Oliy Majlisi huzuridagi Nodavlat
-                  notijorat tashkilotlarini va fuqarolik jamiyatining boshqa
-                  institutlarini qo'llab-quvvatlash jamoat fondi
+                  O'zbekiston Respublikasi Prezidenti
                 </h3>
               </a>
             </div>
             <div className="bg-gray-100 p-4 rounded-lg text-center">
-              <a href="https://ombudsman.uz/uz">
+              <a href="https://parliament.gov.uz/">
                 <div className="mb-3">
                   <Image
-                    src="https://upload.wikimedia.org/wikipedia/uz/3/34/Ombudsman_logo.jpg"
-                    alt="Institution Icon"
+                    src="https://senat.uz/media/post/images/1678712800626015.jpg"
+                    alt="Parliament.gov.uz"
                     width={60}
                     height={60}
-                    className="mx-auto"
+                    className="mx-auto mt-6"
                   />
                 </div>
                 <h3 className="text-sm font-medium mb-1">
-                  O'zbekiston Respublikasi Oliy Majlisining Inson huquqlari
-                  bo'yicha vakili (Ombudsman)
+                  O'zbekiston Respublikasi Oliy Majlisi
                 </h3>
               </a>
             </div>
             <div className="bg-gray-100 p-4 rounded-lg text-center">
-              <a href="https://www.ombudsman.uz/oz/managements/bolalar-ombudsmani-2">
+              <a href="https://gov.uz/oz/yoshlar">
                 <div className="mb-3">
                   <Image
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIO2fwMPLknKvR458u1lrP-LoxsmbzApaLOQ&s"
-                    alt="Institution Icon"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoMtJb1iPPysvVP-XwNiU3MAikGD9Bgju1KGAwSiYNj1gZGdzfgXfx9xOjixwk9ya9Xrg&usqp=CAU"
+                    alt="Gov.uz"
+                    width={60}
+                    height={60}
+                    className="mx-auto mt-6"
+                  />
+                </div>
+                <h3 className="text-sm font-medium mb-1">
+                  O'zbekiston Respublikasi Hukumati portali
+                </h3>
+              </a>
+            </div>
+            <div className="bg-gray-100 p-4 rounded-lg text-center">
+              <a href="https://pri.oliymajlis.uz/">
+                <div className="mb-3">
+                  <Image
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTJIxc4j2_KzTRl2xoJiCa5tsGzTOjxW1LOQ&s"
+                    alt="PRI Oliy Majlis"
                     width={60}
                     height={60}
                     className="mx-auto"
                   />
                 </div>
                 <h3 className="text-sm font-medium mb-1">
-                  O'zbekiston Respublikasi Oliy Majlisining Bola huquqlari
-                  bo'yicha vakili (Ombudsman)
+                  O'zbekiston Respublikasi Oliy Majlisi huzuridagi Parlament
+                  tadqiqotlari instituti
                 </h3>
               </a>
             </div>

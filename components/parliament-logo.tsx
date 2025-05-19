@@ -9,11 +9,11 @@ const ParliamentLogo: React.FC<ParliamentLogoProps> = ({ className }) => {
   return (
     <div className={className}>
       <Image
-        src="/images/logos/parliament-logo.png"
+        src="/images/logos/image.png"
         alt="Parliament Logo"
         width={120}
         height={70}
-        className="object-contain "
+        className="object-contain"
       />
     </div>
   );

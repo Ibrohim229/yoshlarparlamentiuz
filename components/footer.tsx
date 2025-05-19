@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#0047AB] text-white">
       <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           <div>
             <div className="flex items-center ">
               <div className="flex items-center">
@@ -85,7 +85,7 @@ const Footer = () => {
                   href="/yoshlar-parlamenti/tarixi"
                   className="hover:underline"
                 >
-                  Yoshlar parlamenti parlament tarixi
+                  Yoshlar parlamenti tarixi
                 </Link>
               </li>
               <li>
@@ -118,6 +118,75 @@ const Footer = () => {
                   className="hover:underline"
                 >
                   Yoshlar parlamenti nizomi
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/yoshlar-parlamenti/parlamentning-yoshlar-guruxlari"
+                  className="hover:underline"
+                >
+                  Parlamentning yoshlar guruxlari
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-medium mb-4">Tadbirlar</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link
+                  href="/tadbirlar/yalpi-majlislar"
+                  className="hover:underline"
+                >
+                  Yalpi majlislar
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/tadbirlar/siyosiy-partiyalar"
+                  className="hover:underline"
+                >
+                  Siyosiy partiyalarning yoshlar guruhlari
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/tadbirlar/qomitalar-yigilishi"
+                  className="hover:underline"
+                >
+                  Qo'mitalar yig'ilishi
+                </Link>
+              </li>
+              <li>
+                <Link href="/tadbirlar/boshqa" className="hover:underline">
+                  Boshqa tadbirlar
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-medium mb-4">Yangiliklar</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link href="/yangiliklar" className="hover:underline">
+                  Yangiliklar
+                </Link>
+              </li>
+              <li>
+                <Link href="/maqolalar" className="hover:underline">
+                  Maqolalar
+                </Link>
+              </li>
+              <li>
+                <Link href="/munosabatlar" className="hover:underline">
+                  Munosabatlar
+                </Link>
+              </li>
+              <li>
+                <Link href="/mediateka" className="hover:underline">
+                  Mediateka
                 </Link>
               </li>
             </ul>

@@ -38,16 +38,20 @@ const Header = () => {
         href: "/yoshlar-parlamenti/tarixi",
       },
       {
+        title: "Yoshlar parlament Kengashi",
+        href: "/yoshlar-parlamenti/rahbariyati",
+      },
+      {
         title: "Yoshlar parlamenti Rahbariyati",
         href: "/yoshlar-parlamenti/rahbariyati",
       },
       {
-        title: "Yoshlar parlament Kengashi",
-        href: "/yoshlar-parlamenti/kengashi",
-      },
-      {
         title: "Yoshlar parlamenti Qo'mitalar",
         href: "/yoshlar-parlamenti/qomitalar",
+      },
+      {
+        title: "Parlamentning yoshlar guruxlari",
+        href: "/yoshlar-parlamenti/parlamentning-yoshlar-guruxlari",
       },
       {
         title: "Yoshlar parlamenti Nizomi va Reglamenti",
@@ -94,15 +98,14 @@ const Header = () => {
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
-            <ParliamentLogo className="h-16 w-auto mt-0" />
+            <ParliamentLogo className="h-16 w-auto mb-4 mx-2" />
             <div className="ml-2">
-              <div className="text-sm font-medium pt-8">
-                O'ZBEKISTON RESPUBLIKASI
+              <div className="text-sm font-medium">
+                O'ZBEKISTON RESPUBLIKASI OLIY MAJLISI
               </div>
               <div className="text-sm font-medium">
-                OLIY MAJLISI QONUNCHILIK
+                QONUNCHILIK PALATASI HUZURIDAGI
               </div>
-              <div className="text-sm font-medium">PALATASI HUZURIDAGI</div>
               <div className="text-lg font-bold">YOSHLAR PARLAMENTI</div>
             </div>
           </Link>
@@ -163,7 +166,7 @@ const Header = () => {
                 </svg>
               </button>
               {activeDropdown === "yoshlar-parlamenti" && (
-                <div className="absolute left-0 top-full w-full bg-[#0047AB] z-50">
+                <div className="absolute left-0 top-full w-[300px] bg-[#0047AB] z-50">
                   <div className="py-2">
                     {dropdownMenus["yoshlar-parlamenti"].map((item) => (
                       <Link
@@ -211,7 +214,7 @@ const Header = () => {
                 </svg>
               </button>
               {activeDropdown === "tadbirlar" && (
-                <div className="absolute left-0 top-full w-full bg-[#0047AB] z-50">
+                <div className="absolute left-0 top-full w-[300px] bg-[#0047AB] z-50">
                   <div className="py-2">
                     {dropdownMenus["tadbirlar"].map((item) => (
                       <Link
@@ -252,7 +255,7 @@ const Header = () => {
                 </svg>
               </button>
               {activeDropdown === "yangiliklar" && (
-                <div className="absolute left-0 top-full w-full bg-[#0047AB] z-50">
+                <div className="absolute left-0 top-full w-[300px] bg-[#0047AB] z-50">
                   <div className="py-2">
                     {dropdownMenus["yangiliklar"].map((item) => (
                       <Link
@@ -295,7 +298,7 @@ const Header = () => {
                 </svg>
               </button>
               {activeDropdown === "xalqaro-munosabatlar" && (
-                <div className="absolute left-0 top-full w-full bg-[#0047AB] z-50">
+                <div className="absolute left-0 top-full w-[300px] bg-[#0047AB] z-50">
                   <div className="py-2">
                     {dropdownMenus["xalqaro-munosabatlar"].map((item) => (
                       <Link

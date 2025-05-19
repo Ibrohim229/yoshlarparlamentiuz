@@ -1,7 +1,3 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Calendar, Clock, MapPin, Users } from "lucide-react"
-
 export default function SiyosiyPartiyalar() {
   const meetings = [
     {
@@ -63,79 +59,7 @@ export default function SiyosiyPartiyalar() {
       </section>
 
       {/* Content Section */}
-      <section className="container mx-auto px-4 py-8">
-        <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
-          <h2 className="text-2xl font-bold mb-4">Siyosiy partiyalarning yoshlar guruhlari yig'ilishlari haqida</h2>
-          <p className="text-gray-700 mb-4">
-            O'zbekiston Respublikasida faoliyat yuritayotgan siyosiy partiyalar o'z tarkibida yoshlar guruhlarini
-            tashkil etgan. Bu guruhlar partiyalarning yoshlar siyosatini ishlab chiqish va amalga oshirish, yoshlarni
-            siyosiy jarayonlarga jalb qilish, yoshlar manfaatlarini ifoda etish bilan shug'ullanadi.
-          </p>
-          <div className="flex items-center justify-center my-8">
-            <div className="relative h-[300px] w-full rounded-lg overflow-hidden">
-              <Image
-                src="/placeholder.svg?height=300&width=600&text=Siyosiy+partiyalar+yoshlar+guruhlari"
-                alt="Siyosiy partiyalar yoshlar guruhlari"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-          <p className="text-gray-700">
-            Siyosiy partiyalarning yoshlar guruhlari muntazam ravishda yig'ilishlar o'tkazib, yoshlarga oid masalalarni
-            muhokama qiladi, yoshlar manfaatlarini ifoda etuvchi takliflar ishlab chiqadi va partiya rahbariyatiga
-            taqdim etadi. Bu yig'ilishlar ochiq o'tkaziladi va ularda barcha qiziquvchilar ishtirok etishi mumkin.
-          </p>
-        </div>
-
-        <h2 className="text-2xl font-bold mb-6">Rejalashtirilgan yig'ilishlar</h2>
-        <div className="space-y-6">
-          {meetings.map((meeting) => (
-            <div key={meeting.id} className="bg-white rounded-lg shadow-sm overflow-hidden">
-              <div className="md:flex">
-                <div className="md:w-1/3">
-                  <div className="relative h-[200px] w-full">
-                    <Image
-                      src={meeting.image || "/placeholder.svg"}
-                      alt={meeting.title}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-                <div className="md:w-2/3 p-6">
-                  <h3 className="text-xl font-semibold mb-3">{meeting.title}</h3>
-                  <div className="space-y-2 mb-4">
-                    <div className="flex items-center text-gray-600">
-                      <Calendar className="h-4 w-4 mr-2" />
-                      <span>{meeting.date}</span>
-                    </div>
-                    <div className="flex items-center text-gray-600">
-                      <Clock className="h-4 w-4 mr-2" />
-                      <span>{meeting.time}</span>
-                    </div>
-                    <div className="flex items-center text-gray-600">
-                      <MapPin className="h-4 w-4 mr-2" />
-                      <span>{meeting.location}</span>
-                    </div>
-                    <div className="flex items-center text-gray-600">
-                      <Users className="h-4 w-4 mr-2" />
-                      <span>{meeting.participants}</span>
-                    </div>
-                  </div>
-                  <p className="text-gray-700 mb-4">{meeting.description}</p>
-                  <Link
-                    href={`/tadbirlar/siyosiy-partiyalar/${meeting.id}`}
-                    className="inline-block bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition"
-                  >
-                    Batafsil ma'lumot
-                  </Link>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      <section className="container mx-auto px-4 py-8">{/* Empty content as requested */}</section>
     </main>
   )
 }
