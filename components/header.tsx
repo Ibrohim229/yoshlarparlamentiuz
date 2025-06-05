@@ -1,34 +1,37 @@
-"use client"
+"use client";
 
-import { useState, useRef, useEffect } from "react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { Search } from "lucide-react"
-import ParliamentLogo from "./parliament-logo"
+import { useState, useRef, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Search } from "lucide-react";
+import ParliamentLogo from "./parliament-logo";
 
 const Header = () => {
-  const pathname = usePathname()
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
-  const dropdownRef = useRef<HTMLDivElement>(null)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const pathname = usePathname();
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setActiveDropdown(null)
-        setIsMobileMenuOpen(false)
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setActiveDropdown(null);
+        setIsMobileMenuOpen(false);
       }
-    }
+    };
 
-    document.addEventListener("mousedown", handleClickOutside)
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-  }, [])
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const toggleDropdown = (dropdown: string) => {
-    setActiveDropdown(activeDropdown === dropdown ? null : dropdown)
-  }
+    setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
+  };
 
   const dropdownMenus = {
     "yoshlar-parlamenti": [
@@ -84,7 +87,7 @@ const Header = () => {
         href: "/xalqaro-munosabatlar/dostlik-guruhlar",
       },
     ],
-  }
+  };
 
   return (
     <header className="w-full">
@@ -99,34 +102,18 @@ const Header = () => {
           <Link href="/" className="flex items-center">
             <ParliamentLogo className="h-16 w-auto mb-4 mx-2" />
             <div className="ml-2">
-              <div className="text-sm font-medium">O'ZBEKISTON RESPUBLIKASI OLIY MAJLISI</div>
-              <div className="text-sm font-medium">QONUNCHILIK PALATASI HUZURIDAGI</div>
+              <div className="text-sm font-medium">
+                O'ZBEKISTON RESPUBLIKASI OLIY MAJLISI
+              </div>
+              <div className="text-sm font-medium">
+                QONUNCHILIK PALATASI HUZURIDAGI
+              </div>
               <div className="text-lg font-bold">YOSHLAR PARLAMENTI</div>
             </div>
           </Link>
         </div>
 
-        <div className="flex items-center space-x-4">
-          <button className="flex items-center text-sm">
-            <Search className="h-4 w-4 mr-1" />
-            <span>Izlash</span>
-          </button>
-
-          <div className="relative">
-            <button className="flex items-center text-sm">
-              <span>O'zbek</span>
-              <svg
-                className="w-4 h-4 ml-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
+        <div className="flex items-center space-x-4"></div>
       </div>
 
       <div className="bg-[#0047AB]" ref={dropdownRef}>
@@ -148,7 +135,12 @@ const Header = () => {
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
                 </svg>
               </button>
               {activeDropdown === "yoshlar-parlamenti" && (
@@ -169,7 +161,10 @@ const Header = () => {
               )}
             </div>
 
-            <Link href="/yoshlar-parlamenti-azolari" className="px-4 py-4 text-white">
+            <Link
+              href="/yoshlar-parlamenti-azolari"
+              className="px-4 py-4 text-white"
+            >
               Yoshlar parlamenti a'zolari
             </Link>
 
@@ -188,7 +183,12 @@ const Header = () => {
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
                 </svg>
               </button>
               {activeDropdown === "tadbirlar" && (
@@ -224,7 +224,12 @@ const Header = () => {
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
                 </svg>
               </button>
               {activeDropdown === "yangiliklar" && (
@@ -248,7 +253,9 @@ const Header = () => {
             <div className="relative group">
               <button
                 className={`px-4 py-4 text-white flex items-center ${
-                  activeDropdown === "xalqaro-munosabatlar" ? "bg-[#003380]" : ""
+                  activeDropdown === "xalqaro-munosabatlar"
+                    ? "bg-[#003380]"
+                    : ""
                 }`}
                 onClick={() => toggleDropdown("xalqaro-munosabatlar")}
               >
@@ -260,7 +267,12 @@ const Header = () => {
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
                 </svg>
               </button>
               {activeDropdown === "xalqaro-munosabatlar" && (
@@ -284,7 +296,10 @@ const Header = () => {
 
           {/* Mobile Navigation Bar */}
           <div className="flex justify-end md:hidden">
-            <button className="px-4 py-4 text-white" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+            <button
+              className="px-4 py-4 text-white"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
               <svg
                 className="w-6 h-6"
                 fill="none"
@@ -292,7 +307,12 @@ const Header = () => {
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
               </svg>
             </button>
           </div>
@@ -303,7 +323,9 @@ const Header = () => {
               <div className="py-2">
                 {/* Yoshlar parlamenti section */}
                 <div className="border-b border-blue-800">
-                  <div className="px-4 py-3 text-white font-medium">Yoshlar parlamenti</div>
+                  <div className="px-4 py-3 text-white font-medium">
+                    Yoshlar parlamenti
+                  </div>
                   {dropdownMenus["yoshlar-parlamenti"].map((item) => (
                     <Link
                       key={item.href}
@@ -327,7 +349,9 @@ const Header = () => {
 
                 {/* Tadbirlar section */}
                 <div className="border-b border-blue-800">
-                  <div className="px-4 py-3 text-white font-medium">Tadbirlar</div>
+                  <div className="px-4 py-3 text-white font-medium">
+                    Tadbirlar
+                  </div>
                   {dropdownMenus["tadbirlar"].map((item) => (
                     <Link
                       key={item.href}
@@ -342,7 +366,9 @@ const Header = () => {
 
                 {/* Yangiliklar section */}
                 <div className="border-b border-blue-800">
-                  <div className="px-4 py-3 text-white font-medium">Yangiliklar</div>
+                  <div className="px-4 py-3 text-white font-medium">
+                    Yangiliklar
+                  </div>
                   {dropdownMenus["yangiliklar"].map((item) => (
                     <Link
                       key={item.href}
@@ -357,7 +383,9 @@ const Header = () => {
 
                 {/* Xalqaro munosabatlar section */}
                 <div>
-                  <div className="px-4 py-3 text-white font-medium">Xalqaro munosabatlar</div>
+                  <div className="px-4 py-3 text-white font-medium">
+                    Xalqaro munosabatlar
+                  </div>
                   {dropdownMenus["xalqaro-munosabatlar"].map((item) => (
                     <Link
                       key={item.href}
@@ -375,7 +403,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
