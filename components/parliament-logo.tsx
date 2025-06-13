@@ -11,7 +11,7 @@ const ParliamentLogo: React.FC<ParliamentLogoProps> = ({ className }) => {
       <Image
         src="/images/logos/image.png"
         alt="Parliament Logo"
-        width={120}
+        width={130}
         height={70}
         className="object-contain"
       />

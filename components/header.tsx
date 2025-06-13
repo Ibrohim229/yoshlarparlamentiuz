@@ -97,18 +97,20 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <div className="flex items-center">
+      <div className="container px-4 flex justify-between items-center">
+        <div className="flex items-center -mt-4 -mb-2">
           <Link href="/" className="flex items-center">
-            <ParliamentLogo className="h-16 w-auto mb-4 mx-2" />
-            <div className="ml-2">
-              <div className="text-sm font-medium">
+            <ParliamentLogo className="w-auto mx-2" />
+            <div className="ml-2 -mb-3">
+              <div className="sm:text-sm text-xs font-medium">
                 O'ZBEKISTON RESPUBLIKASI OLIY MAJLISI
               </div>
-              <div className="text-sm font-medium">
+              <div className="sm:text-sm text-xs font-medium sm:-mt-1">
                 QONUNCHILIK PALATASI HUZURIDAGI
               </div>
-              <div className="text-lg font-bold">YOSHLAR PARLAMENTI</div>
+              <div className="sm:text-lg text-sm font-bold">
+                YOSHLAR PARLAMENTI
+              </div>
             </div>
           </Link>
         </div>
