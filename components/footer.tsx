@@ -16,42 +16,45 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           <div>
-            <div className="flex items-start mb-6">
-              <ParliamentLogo className="h-16 w-auto flex-shrink-0 " />
+            <div className="flex items-start -mt-8 -ml-1">
+              <ParliamentLogo className="w-auto flex-shrink-0" />
             </div>
 
-            <div>
+            <div className="-mt-3">
               <p className="text-sm font-medium mb-2">Ijtimoiy tarmoqlar:</p>
               <div className="flex space-x-3">
-                <Link href="#" className="text-white hover:text-blue-200">
-                  <svg
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.523-4.477-10-10-10zm-1 15h-2v-6h2v6zm-1-7.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm8 7.5h-2v-3c0-.553-.447-1-1-1s-1 .447-1 1v3h-2v-6h2v1.241c.412-.566 1.044-.958 1.75-.958 1.36 0 2.25 1.054 2.25 2.25v3.467z"></path>
-                  </svg>
+                <Link
+                  href="https://www.facebook.com/people/Yoshlar-Parlamenti/pfbid0HDYq4MmzRnWJVKsDDAr3TiYNfdZYudAE2qXJGTBHxCPKCAGzN9XUU5L7xdm9vSMpl/"
+                  target="_blank"
+                  className="text-white hover:text-blue-200"
+                >
+                  <img
+                    src="/images/icons/facebook.svg"
+                    alt="Telegram"
+                    className="w-6 h-6"
+                  />
                 </Link>
-                <Link href="#" className="text-white hover:text-blue-200">
-                  <svg
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.523-4.477-10-10-10zm5.521 8.507c.005.102.005.203.005.305 0 3.135-2.387 6.752-6.752 6.752a6.707 6.707 0 01-3.644-1.066c.19.022.376.027.569.027a4.747 4.747 0 002.94-1.012 2.375 2.375 0 01-2.214-1.645 2.38 2.38 0 001.071-.041 2.37 2.37 0 01-1.9-2.326v-.03c.32.178.686.285 1.073.297a2.37 2.37 0 01-.733-3.165 6.74 6.74 0 004.893 2.48 2.37 2.37 0 014.037-2.16c.587-.114 1.137-.325 1.634-.616a2.372 2.372 0 01-1.04 1.31 4.73 4.73 0 001.48-.406 4.82 4.82 0 01-1.182 1.228z"></path>
-                  </svg>
+                <Link
+                  href="https://www.instagram.com/yoshlar_parlamenti_qp?igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                  target="_blank"
+                  className="text-white hover:text-blue-200"
+                >
+                  <img
+                    src="/images/icons/instagram.svg"
+                    alt="Telegram"
+                    className="w-6 h-6"
+                  />
                 </Link>
-                <Link href="#" className="text-white hover:text-blue-200">
-                  <svg
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.523-4.477-10-10-10zm3.667 14.667H8.333v-7h2.5v-1.666c0-2.084 1.25-3.334 3.334-3.334h1.666v2.5h-1.666c-.417 0-.834.417-.834.834v1.666h2.5l-.417 2.5h-2.083v4.5z"></path>
-                  </svg>
+                <Link
+                  href="https://t.me/yoshlar_parlamenti_qp"
+                  target="_blank"
+                  className="text-white hover:text-blue-200"
+                >
+                  <img
+                    src="/images/icons/telegram.svg"
+                    alt="Telegram"
+                    className="w-6 h-6"
+                  />
                 </Link>
                 <Link href="#" className="text-white hover:text-blue-200">
                   <svg

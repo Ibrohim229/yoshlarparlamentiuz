@@ -1,7 +1,8 @@
-import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
 import MemberInfo from "@/components/MemberInfo";
 import Sidebar from "@/components/Sidebar";
+import { ArrowLeft } from "lucide-react";
+import Link from "next/link";
+import React from "react";
 
 interface PageProps {
   params: {
@@ -133,47 +134,28 @@ const leaders = [
   },
 ];
 
-export default function MemberDetail({ params }: PageProps) {
+const MemberDetail = ({ params }: PageProps) => {
   const member = leaders.find((leader) => leader.id === params.id);
-
-  if (!member) {
-    return (
-      <main className="min-h-screen bg-gray-50 py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-3xl font-bold mb-4">A'zo topilmadi</h1>
-          <Link
-            href="/yoshlar-parlamenti/rahbariyati"
-            className="inline-flex items-center text-blue-600 hover:underline"
-          >
-            <ArrowLeft className="h-4 w-4 mr-2" />
-            Rahbariyat sahifasiga qaytish
-          </Link>
-        </div>
-      </main>
-    );
-  }
-
   return (
     <main className="min-h-screen bg-gray-50 pb-16">
       <div className="container mx-auto px-4 py-8">
         <div className="mb-6">
           <Link
-            href="/yoshlar-parlamenti/rahbariyati"
+            href="/yoshlar-parlamenti-azolari"
             className="inline-flex items-center text-blue-600 hover:underline"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            Rahbariyat sahifasiga qaytish
+            Ortga qaytish
           </Link>
         </div>
 
         <div className="flex flex-col md:flex-row gap-8">
-          {/* Main Content */}
           <MemberInfo member={member} />
-
-          {/* Sidebar */}
           <Sidebar />
         </div>
       </div>
     </main>
   );
-}
+};
+
+export default MemberDetail;
