@@ -141,19 +141,19 @@ export default function YoshlarParlamentiAzolari() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {members.map((member) => (
               <Link
                 key={member.id}
                 href={`/yoshlar-parlamenti-azolari/${member.id}`}
-                className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition"
+                className="bg-white flex rounded-lg shadow-sm overflow-hidden h-52 hover:shadow-md transition"
               >
-                <div className="relative h-[200px] w-full">
+                <div className="relative w-44">
                   <Image
                     src={member.image || "/placeholder.svg"}
                     alt={member.name}
                     fill
-                    className="object-cover"
+                    objectFit="cover"
                   />
                 </div>
                 <div className="p-4">
@@ -162,26 +162,6 @@ export default function YoshlarParlamentiAzolari() {
                 </div>
               </Link>
             ))}
-          </div>
-
-          <div className="flex justify-center mt-8">
-            <nav className="flex items-center">
-              <button className="px-3 py-1 border border-gray-300 rounded-l-md hover:bg-gray-100">
-                &laquo; Oldingi
-              </button>
-              <button className="px-3 py-1 border-t border-b border-gray-300 bg-blue-600 text-white">
-                1
-              </button>
-              <button className="px-3 py-1 border-t border-b border-gray-300 hover:bg-gray-100">
-                2
-              </button>
-              <button className="px-3 py-1 border-t border-b border-gray-300 hover:bg-gray-100">
-                3
-              </button>
-              <button className="px-3 py-1 border border-gray-300 rounded-r-md hover:bg-gray-100">
-                Keyingi &raquo;
-              </button>
-            </nav>
           </div>
         </div>
       </section>
